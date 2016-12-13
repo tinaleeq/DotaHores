@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <ImageView
+        android:id="@+id/infoimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="23dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/infotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/infoimage"
+        android:layout_marginLeft="48dp"
+        android:layout_toRightOf="@+id/infoimage"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000066"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/infotext"
+        android:layout_below="@+id/infotext"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/equiplist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/infoimage"
+        android:layout_below="@+id/info"
+        android:layout_marginTop="5dp"
+        android:text="@string/equiplist"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000066"
+        android:textStyle="bold" />
+
+    <GridView
+        android:id="@+id/equipView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/equiplist"
+        android:numColumns="3" >
+    </GridView>
+
+</RelativeLayout>
